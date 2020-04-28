@@ -1,0 +1,9 @@
+p {
+	color: black;
+	background-color: azure;
+	font-size: large;
+	text-align: center;
+	text-shadow: 3px 3px yellow;
+	}
+	
+/* This is the text shadow property, this is displayed as 3 px height, 3px vertical and the shadow color will be yellow */
