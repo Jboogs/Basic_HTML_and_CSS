@@ -1,0 +1,132 @@
+/* Set background color of body element to #fff (white) */
+body {background-color: #fff}
+/* Sets the h1 element to have a margin, text color, margin on left */
+h1 {
+    color: rgba(8, 141, 165, 1);
+    margin-left: 100px; 
+    /* can be px or % from left side of page and if inside another container whose
+    size is already specified, the px/% would be from the left margin of that container */
+    text-shadow: 1px .5px 4px rgba(0, 0, 0, .6);
+    }       /* text shadow layout: x-axis (positive is right, neg is left), 
+            y-axis (positive is down, negative is up), blur (glaussian , the text shadow effect),
+            color */
+
+
+    .container {
+        width: 450px;
+        height: 450px;
+        background-color: #faebd7;
+        border: 2px solid black;
+        /* border: 2px wide, solid line, color: black */
+        border-radius: 5%;
+        /* gives a slight rounded edge around the said container, 
+            a 5% radius circle at the edges can also look like
+            border-radius: 5% 5% 5% 5%;  One for each corner 
+            (top left, top right, bottom right, bottom left)
+            if all are same, you can put just first # and rest
+            will assume */
+    }
+
+    /*Ths is the CSS for the square class*/
+
+    /* Select all squares in the array container */
+
+    /* the .squares:nth-child(-n+4) states, all the squares in
+    the container div.  if you were to put a (1) it would only 
+    be the first square child */
+    .container .squares:nth-child(-n+4) {
+        background-image: url("../images/icons/smileyface2.png");
+        color: #fff;
+        float: left;
+        /* Keeps the elements in a line, equally spaced, from the 
+        left of the container */
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        border: 1px solid black;
+        border-radius: 25%;
+        cursor: pointer;
+        /* changes the curson to the hand pointer symbol
+        when you hover over area, tells a user this may be
+        a link */
+        transition: transform .5s ease-in-out;
+        /* This makes a transition, transition property (transform)
+        duration (.5 seconds to change from one color to the other),
+        delay (seconds, not necesary in all cases but would hold third position),
+        style (ease-in-out) how it will look */  
+    }
+    /* Select all squares parapgraphs inside the array, the <p> 
+    element in the array (Box 1, Box 2 text etc... */
+    .squares:nth-child(-n+4) p{
+        font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+        font-size: 1.5em; /* em, %, px */
+        font-weight: 900;
+        text-align: center;
+        margin: 0;
+        text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    /* Individually select each of the squares in the array */
+     .squares:nth-child(1) {
+         background-color: red;
+     }
+/* nth-child(2) selects the second child in the array */
+     .squares:nth-child(2) {
+        background-color: blue;
+    }
+
+    .squares:nth-child(3) {
+        background-color: yellow;
+    }
+
+    .squares:nth-child(4) {
+        background-color: azure;
+    }
+
+    /* adding the HOVER, TRANSLATE, TRANSFORM effects to the squares to show 
+    other smiley face image */
+
+    .container .squares:nth-child(-n+4):hover {
+        background-image: url("../images/icons/smileyface1.png");
+        /* making something larger or smaller, .5 larger */
+        transform: scale(.5);
+        /* This is where the animation is called */
+        animation-name: race;
+        animation-duration: 2.5s
+        /* how many times will this animation take place? */
+        animation-iteration-count: infinite;
+        /* timing function, the style, cubic-bezier is the number
+        value of what you want */
+        animation-timing-function: cubic-bezier(2.5, .2, .3, 2)
+    }
+
+    /* target individual squares */
+
+    .squares:nth-child(1):hover {
+        background: red;
+    }
+
+    .squares:nth-child(2):hover {
+        background: blue;
+    }
+
+    .squares:nth-child(3):hover {
+        background: yellow;
+    }
+
+    .squares:nth-child(4):hover {
+        background: azure;
+    }
+/* Animation effect keyframe */
+    @keyframes race {
+        /* before animation starts, youre at 0%, 100% is end, beginning and end
+        are the only required */
+        0%, 100% {
+            transform: translateY(0px);
+            background-image: url("../images/icons/smileyface1.png");
+        }
+        /* half way through this happens */
+        50% {
+            transform: translateY(330px);
+        }
+    }
