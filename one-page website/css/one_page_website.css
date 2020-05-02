@@ -1,0 +1,19 @@
+html {
+    font-family: sans-serif;
+    font-size: auto;
+}
+
+form {
+    width: 15%;
+    height: 15%;
+    border: 3px double red;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+form input:nth-child(-n+7) {
+    border: 2px double red;
+    border-radius: 2px;
+    overflow: hidden;
+    display: block;
+}
