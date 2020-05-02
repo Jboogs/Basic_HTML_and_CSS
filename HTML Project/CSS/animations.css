@@ -89,7 +89,7 @@
      cursor: pointer;
  }
 
- photo-overlay:hover {
+ .photo-overlay:hover {
      opacity: 1;
  }
 
