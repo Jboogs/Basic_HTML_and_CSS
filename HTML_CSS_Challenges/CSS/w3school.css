@@ -1,0 +1,185 @@
+.character_box {
+    border: 3px double red;
+    border-radius: 1px;
+    text-align: center;
+    display: block;
+
+}
+
+.character_box:hover {
+    background-color: bisque;
+    color: red;
+    font-size: 115%;
+}
+
+/* I have read and learned how to create a button using CSS */
+.button {
+    background-color: darkblue; 
+    border: 3px solid black ;
+    color: red;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: darkcyan;
+}
+
+.image_container {
+    display: block;
+    font-family: sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    position: relative;
+    text-align: center;
+    color: rgb(9, 252, 82);
+    
+
+}
+
+.image_container p {
+    text-align: center;
+    display: auto;
+    
+    
+}
+/* IMage has a border, border radius (rounded edges) and a height
+and width auto fitted to the container */ 
+.image {
+    border: 3px solid yellow;
+    border-radius: 5px;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+
+/* When the image container is hovered over, the invert filter is applied at 50% */
+
+.image_container:hover {
+    filter: invert(75%);
+}
+
+.footer {
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.footer span {
+    font-style: italic;
+}
+
+table, th, td {
+    border: 2px double darkblue;
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+}
+
+.grid_container {
+    padding: 10px;
+}
+th {
+    background-color: darkkhaki;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+  }
+  .navbar {
+     position: relative;
+  }
+
+  ul {
+      list-style-type: none;
+      
+      
+  }
+  li {
+      display: inline;
+      border: 2px double darkgoldenrod;
+      background-color: darkmagenta;
+      color: #fff;
+  }
+
+  li:hover {
+      color: darkcyan;
+  }
+
+  .row {
+      display: flex;
+      color: purple;
+      width: 500px;
+  }
+  .column {
+      flex: 50%;
+      text-align: center;
+      border: 5px double khaki;
+      height: 25px;
+      }
+
+.p_container {
+    border: 5px solid black;
+    text-align: center;
+    background-color: red;
+    width: 50%;
+}
+
+.para {
+    color: black;
+}
+
+.p_container:hover {
+    background-color: rosybrown;
+    font-size: 1.1em;
+}
+
+.overlay_container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .overlay_image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: 1s ease;
+    background-color: black;
+  }
+  
+  .overlay_container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
