@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<!-- This is the head of the document-->
+<head>
+    <title>Justin Perry, programmer</title>
+    <meta charset="UTF-8"><!--Declare character set-->
+    <link rel="stylesheet" type="text/css" href="./css/Portfolio.css">
+</head>
+<!--End head sections-->
+
+<!--Begin the Body of the website-->
+<body class="background">
+
+    <!-- Begin navbar/navigation -->
+    <div class="Navbar">
+        <a class="active" href="#Home">HOME</a>
+        <a href="#About">ABOUT</a>
+        <a href="#Github">GITHUB</a>
+        <a href="#Contact">CONTACT</a>
+        <a href="https://japerrypython.wordpress.com">BLOG</a>
+    </div>
+    <!-- End navbar/navigation -->
+
+    <!--This is the break between navbar and heading 1-->
+    <br>
+    <br>
+
+    <!--This is the video playing-->
+    <div id="Home">
+        <video autoplay muted loop id="Typing_Video">
+            <source src="./video/dark_earth.mp4" type="video/mp4">
+                This video is not supported <!--Displays if video fails to run-->
+        </video>
+    </div>
+
+    <!--End video playing-->
+    <!--This is the video text after the nav bar-->
+    <div class="Video_Text">
+        <h1>Justin Perry's Portfolio</h1>
+            <p>
+                <strong>
+                    <center>
+                        <!--This is s good place for a quote and blurb about your self-->
+                        <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                            <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+                            <br>field of battle and to command such unswervingly dutiful actors or troops.
+                            </q>	
+                            <br>-Joseph Weizenbaum<br>
+                            <br>
+                            Welcome to Justin Perry's portfolio website.<br>
+                            <br>Thank you for stopping by and enjoy my code! 
+                    </center>
+                </strong>
+            </p>
+    </div>
+<!--End Text over video-->
+
+<!--Begin About me Section-->
+    <div class="Row" id="About">
+        <div class="Column_2"> <!--Left-->
+            <img src="./images/jp_ski_about.jpg" alt="dev photo">
+        </div>
+
+        <div class="Column_1"> <!--right-->
+            <h1>About Justin</h1>
+            <p>I am a software developer who loves to code! I am also an avid outdoor-sport's enthusiast who enjoys skiing, biking and hiking around the world. <br><br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python and more. <br><br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>        </div>
+    </div>
+<!-- End About me section-->
+
+<!--This is the link square to my github repo-->
+<div class="Row" id="GitHub">
+    <div class="Column_1"> <!-- Left column -->
+        <h1>GitHub</h1>
+            <p>You can view my my GitHub profile here:<br>
+            <center><a href="https://github.com/Jboogs/Basic_HTML_and_CSS" target="_blank">Justin's GitHub</a></center></p>
+    </div>
+    
+    <div class="Column_2"> <!-- Right column -->
+        <a href="https://github.com/Jboogs/Basic_HTML_and_CSS" target="_blank">
+            <img src="./images/github_2.jpg" alt="GitHub"></a>
+    </div>
+</div>
+<!--End github repo-->
+
+<!--Begin Contact Form-->
+    <div class="Row" id="Contact">
+        <div class="Column_3"> <!--Contact image in left column-->
+            <img src="./images/Development.jpg" alt="contact me">
+        </div>
+    
+
+    <div class="Column_1"> <!--This is the contact form right column-->
+        <h2>Contact Me!</h2>
+            <form action="form_message.txt" method="get"> <!--Send form data where and how-->
+                <label>Name:</label>
+                    <input type="text" placeholder="Enter Name Here">
+                <label>Email Address:</label>
+                    <input type="text" placeholder="Enter Email Here">
+                <label>Send A Message:</label>
+                    <input type="text" placeholder="Enter Message Here">
+                    <input type="Submit" value="Submit">
+            </form>
+        </div>
+    </div>
+<!--End Contact Form-->
+
+<!--This is the footer-->
+    <footer>
+        <p>
+        &copy Justin Perry Solutions Inc.,  <a href="#">Portfolio Website</a> 
+        </p>
+    </footer>
+<!--End footer-->
+
+
+</body>
+<!-- End body of the website  -->
+
+</html>
